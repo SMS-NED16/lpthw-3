@@ -1,0 +1,5 @@
+The error occurred because the variable car_pool_capacity had not been created before line 8. As a variable, car_pool_capacity is a box or container for some information, which was to be accessed in the assignment operation on line 8. However, in order for line 8 to access the value stored in car_pool_capacity, Python first needs to know what car_pool_capacity actually refers to i.e. the variable needs to be defined. 
+
+When the variable is not defined, Python does not know which variable or piece of information the name 'car_pool_capacity' refers to and so does not know how to access the information stored in it.
+
+1. 

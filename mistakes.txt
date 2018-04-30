@@ -1,0 +1,6 @@
+* Missed a hyphen in a string literal
+* Added extra whitespace to the beginning of each line in a triple quote delimited string literal. This is bad because such string literals do not ignore whitespace. 
+* Lots of unicode decode errors
+* Don't know how n{NAME} works - what is a NAMED variable of the ASCII database?
+* Missing the ending quote in a formatting string leads to an EOF file error.
+* The input function takes no end=' ' argument, or any keyword argument for that matter.

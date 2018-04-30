@@ -1,0 +1,5 @@
+print("This is an example of string concatenation.")
+print("When the + operator is applied to two string as in 'w + e'")
+print("The two strings are concatenated i.e. the last character of one string")
+print("Is joined to the first character of the other")
+print("And the result is a single string.")
