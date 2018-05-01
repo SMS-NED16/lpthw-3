@@ -4,3 +4,5 @@
 * Don't know how n{NAME} works - what is a NAMED variable of the ASCII database?
 * Missing the ending quote in a formatting string leads to an EOF file error.
 * The input function takes no end=' ' argument, or any keyword argument for that matter.
+* You can enter a formatted string just about anywhere. For instance, in a write operation, there is no need to use the string.format() method to create a formatted string with variables, and then write this formatted string.
+Instead, just use target.write(f"{var} is the {type} variable that I have decided to enter. This {name} shows how to use formatted strings for write operations.")

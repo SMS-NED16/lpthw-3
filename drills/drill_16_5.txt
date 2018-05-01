@@ -1,0 +1,5 @@
+It is not necessary to call the truncate method before write. This is because write will implicitly call the truncate method on its own, which means calling the truncate method before a write method is redundant.
+
+This means that
+1. We do not need to call the truncate method on a file object before using the write operation on the same object.
+2. The write method will ALWAYS erase or overwrite the previous contents of the target file object and replace them with the argument passed to it.

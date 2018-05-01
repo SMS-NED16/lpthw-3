@@ -1,0 +1,5 @@
+A file can be opened in many ways. By default, when a file object is created with a call to open(), it takes only one parameter - the name of filepath of the target file from which a file object will be created. This file object will be created in the 'read' mode i.e. we can only read information from the file object, but can't write any information to it.
+
+The 'w' is an optional parameter that is passed to the open method as a way of explicitly telling the Python interpreter that we wish to create a file object which will allow us to WRITE data to the target file. 
+
+There are other arguments which can be passed in place of 'w', each of which opens the file in a specific 'mode' which is tailored for a specific type of file operation.
