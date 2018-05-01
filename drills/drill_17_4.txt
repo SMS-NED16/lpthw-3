@@ -1,0 +1,8 @@
+The out_file.close() statement closes the output file before the Python programme terminates. This is important because it prevents the output file from being corrupted and also prevents memory leaks. 
+
+
+Other reasons from a StackOverflow post
+1. It puts your programme in the garbage collector's hands.
+2. It can slow down your programme. Too many files open can result in too much RAM being used, which can impact performance.
+3. For the most part, any changes to files in Python do not go into effect until after the file is closed, so if our script edits, leaves open, and then tries to read the same file, it won't see the edits.
+4. Could possibly run into limits of how many files can be open at any given time - this is especially true when automating filescraping through a Python script.
