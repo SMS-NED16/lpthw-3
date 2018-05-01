@@ -1,0 +1,11 @@
+"TERMINAL HISTORY FOR READING A FILE FROM THE CONSOLE"
+
+>>> open('files/ex15_sample.txt')
+<_io.TextIOWrapper name='files/ex15_sample.txt' mode='r' encoding='UTF-8'>
+>>> my_file = open('files/ex15_sample.txt')
+>>> print(my_file.read())
+This is stuff I typed into a file.
+It is really cool stuff.
+Lots and lots of fun to have in here.
+>>> my_file.close()
+>>> quit()
