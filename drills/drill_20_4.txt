@@ -1,0 +1,7 @@
+The seek function is one of the many built-in functions defined for file objects in Python 3. It changes the file object's position using an offset relative to a reference point. 
+
+The default value for the optional reference point argument is 0, and it sets the reference point to the beginning of the file object. An argument of 1 sets the current file object position as the reference point, whereas an argument of 2 sets the end of the file as the reference point.
+
+The offset is the number of lines ahead (or before) the parser of the file object is placed relative to the reference point.
+
+To summarise, the file.seek method finds a specific position in the file from which to start parsing its contents.
