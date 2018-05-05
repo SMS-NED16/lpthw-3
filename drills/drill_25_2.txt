@@ -1,0 +1,35 @@
+Calling help(ex25) accesses and prints ALL the docstring comments for the ex25.py file
+>>> help(ex25)
+
+    break_words(stuff)
+        This function will break up words for us.
+    
+    print_first_and_last(sentence)
+        Prints the first and last words of the sentence.
+    
+    print_first_and_last_sorted(sentence)
+        Sorts the words then prints the first and last one.
+    
+    print_first_word(words)
+        Prints the first word after popping it off
+    
+    print_last_word(words)
+        Prints the last word after popping it off.
+    
+    sort_sentence(sentence)
+        Takes a full sentence and returns the sorted words.
+    
+    sort_words(words)
+        Sorts the words.
+
+
+Calling help(ex25.break_words) accesses the docstring comment only for the break_words function
+>>> help(ex25.break_words)
+
+Help on function break_words in module ex25:
+
+break_words(stuff)
+    This function will break up words for us.
+(END)
+
+Docstrings are special comments delimited by triple quotes that are placed on the line directly after the function signature. They're useful for generating help documentation automatically using comments embedded in source files.

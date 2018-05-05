@@ -1,0 +1,62 @@
+Every python file can be considered as a module i.e. a collection of code/functions/variables
+So here we are treating our ex25 drill file as a module and importing it as a module so we can use its functions
+Don't need to write 'ex25.py' because Python assumes by default that all files accessed with the import
+command will be .py files
+>>> import ex25
+
+Created a sentence variable to store a sentence string literal
+>>> sentence = "All good things come to those who wait."
+
+Accessed the break_words function defined in the ex25 file that has been imported as a module and passed to
+it the sentence variable we just created. This is a way of calling a function defined in a module.
+Result of the function call is stored in the variable words
+>>> words = ex25.break_words(sentence)
+
+Echoing the words variable - it contains a list of words that made up our string.
+The break_words function has split this string into a list of words by creating a new word every time it encountered a ' '. Each word was added to a data structure called a list, which was eventually returned.
+>>> words
+['All', 'good', 'things', 'come', 'to', 'those', 'who', 'wait.']
+
+Calling another function defined in the ex25 file - sort_words which will take a list and sort it alphabetically or in ascending order.
+>>> sorted_words = ex25.sort_words(words)
+
+Echoing value stored in sorted_words to make sure ex25.sort_words worked as expected
+>>> sorted_words
+['All', 'come', 'good', 'things', 'those', 'to', 'wait.', 'who']
+
+Calling the print_first_word function from ex25.py - this will remove the first element of the 'words' list
+and print it to the console. Now the 'words' list has one less element
+>>> ex25.print_first_word(words)
+All
+
+Calling the print_last_word function from ex25.py - this will remove the last element of the 'words' list and print it to the console. Now the 'words' list has one less element.
+>>> ex25.print_last_word(words)
+wait.
+
+Echoing the words list to confirm that the last two function calls have indeed modified it.
+>>> words
+['good', 'things', 'come', 'to', 'those', 'who']
+
+Doing the same thing with the sorted_words list generated earlier
+>>> ex25.print_first_word(sorted_words)
+All
+>>> ex25.print_last_word(sorted_words)
+who
+>>> sorted_words
+['come', 'good', 'things', 'those', 'to', 'wait.']
+
+Showing it is possible to simplify the entire code^ using abstraction. Instead of separate calls to break_words, sorted, print_first, and print_last with intermediate variables, we nested function calls in a single function - sort_sentence that will take a sentence string and internally split and sort it with the same function calls that we did explicitly. 
+>>> sorted_words = ex25.sort_sentence(sentence)
+
+Echoing sorted_words to show that the result is the same as manual calls to split -> sort
+>>> sorted_words
+['All', 'come', 'good', 'things', 'those', 'to', 'wait.', 'who']
+
+Doing the same thing to show that printing first and last words can also be abstracted
+>>> ex25.print_first_and_last(sentence)
+All
+wait.
+>>> ex25.print_first_and_last_sorted(sentence)
+All
+who
+>>> 

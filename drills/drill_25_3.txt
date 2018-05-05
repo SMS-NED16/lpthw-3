@@ -1,0 +1,33 @@
+Made a generic import using the following line
+>>> from ex25 import *
+
+In programming/computer systems, the * argument usally means 'ALL'
+This line is telling the Python interpreter to import ALL the functions from the ex25.py file
+This is basically the same as copying them directly in to the interpreter 
+The problem with this approach is that the function names could conflict with other identically named functions that we've written.
+So Python would have no way of knowing if sort_words means it should call ex25's version of sort_words or another module's version of sort_words
+The advantage is that we don't have to precede each function call with the ex25. notation
+
+>>> sentence = "All good things come to those who wait."
+>>> words = break_words(sentence)
+>>> words
+['All', 'good', 'things', 'come', 'to', 'those', 'who', 'wait.']
+>>> sorted_words = sort_words(words)
+>>> sorted_words
+['All', 'come', 'good', 'things', 'those', 'to', 'wait.', 'who']
+>>> print_first_word(words)
+All
+>>> print_last_word(words)
+wait.
+>>> words
+['good', 'things', 'come', 'to', 'those', 'who']
+>>> print_first_word(sorted_words)
+All
+>>> print_last_word(sorted_words)
+who
+>>> sorted_words = sort_sentence(sentence)
+>>> sorted_words
+['All', 'come', 'good', 'things', 'those', 'to', 'wait.', 'who']
+>>> print_first_and_last_sorted(sentence)
+All
+who
