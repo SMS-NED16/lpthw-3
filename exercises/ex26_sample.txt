@@ -1,0 +1,3 @@
+This is some smaple text
+That I am writing into a sample file
+That will be used in example 26 cat
