@@ -1,0 +1,4 @@
+The if code is a conditional statement. Any code placed under a conditional statement will be executed if and only if the conditional is satistfied. The if statement always has a condition which is an expression that can be evaluated to a True or False i.e. to a Boolean value.
+If the condition evaluates to True, statements in the body of the if statement are executed.
+If the condition evaluates to False, statements in the body of the if statement are not executed - the programme's flow of control skips the if statement entirely.
+
