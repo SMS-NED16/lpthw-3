@@ -1,0 +1,18 @@
+List of methods defined for lists according to pydoc
+append - append object to end of list - returns nothing
+clear - removes all items from the list - returns nothing
+copy - a shallow copy of the list - returns a 'list' object
+count - returns an integer - the number of occurrences of a value
+extend - no return - extend the list by appending elements from the iterable
+	this probably means that an iterable element (like a stirng, another list, or a tuple)
+	is passed to the extend function. The extend function parses the entire object and adds
+	each element one by one to the current list.
+	So if stack = ['a', 'b'], then stack.append('c') = ['a', 'b', 'c'] - this is fine
+	But if stack = ['a', 'b'] then stack.append(['c', 'd', 'e']) = ['a', 'b', ['c', d', 'e']] which is not what we want
+	In this case, stack.extend(['c', 'd', 'e']) is a better option - returns ['a', 'b', 'c', 'd', 'e']
+index - returns the first index of a value
+insert - inserts the object in the list before the specified index
+pop - removes and rerutns item at the specified index. Default behaviour - removes and returns the last element
+remove - None - removes the first occurrence of a value. Does not return the value, unlike pop
+reverse - Reverses the list in-place i.e. the same piece of memory is reorganized
+sort - stable sort that is also in place

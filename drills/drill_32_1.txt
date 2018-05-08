@@ -1,0 +1,21 @@
+pydoc for range
+ |  range(stop) -> range object
+ |  range(start, stop[, step]) -> range object
+ |  
+ |  Return an object that produces a sequence of integers from start (inclusive)
+ |  to stop (exclusive) by step.  range(i, j) produces i, i+1, i+2, ..., j-1.
+ |  start defaults to 0, and stop is omitted!  range(4) produces 0, 1, 2, 3.
+ |  These are exactly the valid indices for a list of 4 elements.
+ |  When step is given, it specifies the increment (or decrement).
+
+ range is a built-in Python function that returns a range object or a sequence of integers. To do this, it can take up to three arguments
+ 1. start - the first integer for the sequence of numbers to be generated
+ 2. stop - the integer AFTER the last integer for the sequence of numbers to be generated. The stop argument value is not included in the range object returned.
+ 3. step - the increment or decrement between successive integers in the range object.
+
+ Returns a 'range' object, which is essentially a list of numbers that have been generated according to our start, stop, step arguments.
+
+Range was used on line 28 in ex32.py
+ for i in range(0, 6):	# end argument of range function is not included
+The range function was called with the starting argument 0, stop argument 6, and no step argument. This means that range(0, 6) returned a range object including the numbers [0, 1, 2, 3, 4, 5] - 6 excluded. 
+The range object was then used as the collection of data being parsed by the for loop - each element in the range object was printed to the console in a formatted string.
