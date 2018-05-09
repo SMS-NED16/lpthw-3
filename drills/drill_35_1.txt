@@ -1,0 +1,15 @@
+1. Start in the room with two doors - start()
+	A. Go left - bear_room()
+		a. Taunt the bear for the first time -> taunt the bear for the second time -> dead("The bear gets pissed off and chews your leg off.")
+		b. Taunt the bear for the first time -> open door -> gold_room()
+			i. Enter a number less than 50 containing either 1 or 0
+				-> Nice, you're not greedy. You win! Good job!
+			ii. Enter a number greater than or equal to 50 containing either 1 or 0.
+				-> "You greedy bastard. Good job!"
+			iii. Enter literally anything else - dead("Learn how to enter a number")
+	B. Go right - ctulhu_room()
+		a. Enter any string containing 'flee' -> return to the left start room
+		b. Enter any string containing 'head' -> Well, that was tasty.
+		c. Any other input - ctulhu_room()
+	C. Enter anything else
+		Game ends with "You stumble around the room and starve to death."
