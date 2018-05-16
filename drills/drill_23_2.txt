@@ -1,0 +1,11 @@
+python3.6 ex23.py abc-3  strict
+Traceback (most recent call last):
+  File "ex23.py", line 44, in <module>
+    main(languages, input_encoding, error)
+  File "ex23.py", line 20, in main
+    print_line(line, encoding, errors)
+  File "ex23.py", line 31, in print_line
+    raw_bytes = next_lang.encode(encoding, errors=errors)
+LookupError: unknown encoding: abc-3
+
+Python throws a LookupError stating that it does not recognise the encoding passed to the Python script as an argument. Such an error is called a LookupError because computers have Lookup Tables of various character encodings (ASCII, utf-8, utf-16). When we pass an invalid encoding scheme as an argument, Python tries and fails to find it amongst the computer's lookup tables.
