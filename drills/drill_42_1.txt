@@ -1,0 +1,20 @@
+Pydoc for `object` keyword is very bare-bones. All it says is that object is a class of 'the most base type'. 
+
+Python documentation available online is slightly more detailed. It defines object as the base for all classes that has methods common to all instances of python classes. It also states that an instance of the object class does not have __dict__ attribute, which means we can't assign an arbitrary attribute to objects.
+
+In Python 2.0, classes could be declared as inheriting from the object base class or without inheriting from it. Inheriting from the object base class had many advantages. A StackOverflow post states that there are many advantages to inheriting from object. The most important 
+
+Without a doubt, when writing a class you'll always want to go for new-style classes. The perks of doing so are numerous, to list some of them:
+
+Support for descriptors. Specifically, the following constructs are made possible with descriptors:
+
+classmethod: A method that receives the class as an implicit argument instead of the instance.
+staticmethod: A method that does not receive the implicit argument self as a first argument.
+properties with property: Create functions for managing the getting, setting and deleting of an attribute.
+__slots__: Saves memory consumptions of a class and also results in faster attribute access. Of course, it does impose limitations.
+The __new__ static method: lets you customize how new class instances are created.
+
+Method resolution order (MRO): in what order the base classes of a class will be searched when trying to resolve which method to call.
+
+
+Object has now been deprecated. It is no longer needed to be explicitly inherited from when defining new classes.
