@@ -1,0 +1,14 @@
+The setup file
+The setup.py file is a Python script that is used to install a package using 
+the distutils module. The 'distutils' module or distribution utilities package is
+the standard library for packaging Python modules for distribution and integration into
+other Python programmes. If a downloaded package has a setup.py, it can easily be 
+installed in your version of Python (or in a virtual environment) using python setup.py install.
+
+It contains metadata about the package being installed. Some of this is useful for
+documentation purposes (e.g. the name of the module, its URL, the creator, etc.). Other
+data is useful for installation - a list of dependencies (other modules required for this
+module to run).
+
+If a Python package contains the setup.py file, it has been packaged for distribution
+with the distutils module

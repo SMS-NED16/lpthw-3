@@ -1,0 +1,30 @@
+Stuff We Installed 
+1. pip
+pip stands for Pip Installs Packages, and is a package management system for Python.
+It is a piece of software that is packaged/bundled with Python 3.6 and allows us to 
+easily install and integrate Python package. It fetches these packages from the 
+PyPI or Python Package Index, which is a centralised repository of Python packages.
+
+Simply put, pip is a tool that let's us install Python packages. 
+
+2. virtualenv
+A virtual environment is an isolated software compartment within which we can develop a Python
+programme with its own modules, versions, dependencies, and code without affecting the same 
+attributes for other Python programmes.
+
+The basic issue solved by virtualenv is that of dependencies and versions, and indirectly permissions.
+If we had an application A that required version 1 of a package NumPy but also had to write another
+application B that required version 2, then we would have a problem. We couldn't just install everything
+into /usr/lib/python3.6/site-packages (or wherever Python stores packages) for B without overwriting 
+the same package for A. So at any given time, A and B couldn't be installed and run on the same machine.
+
+More generally, we need a way to compartmentalize our Python applications so that one's dependencies are
+not changed by adding/removing libraries to another. Otherwise, this could break our programme.
+
+In all these cases, virtualenv can help us. It creates a virtual partition or compartment that has its
+own installation directories, that doesn't share libraries with other virutalenv environemnts (and optionally doesn't access the globally installed libraries either.)
+
+
+3. nosetools
+nosetools is a module that provides many functions and attributes to help make the process
+of testing a Python project/code easier. 
